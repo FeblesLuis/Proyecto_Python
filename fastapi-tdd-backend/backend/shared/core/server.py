@@ -35,7 +35,7 @@ def get_application():
 
     @app.get("/")
     def home():
-        return {"message": "Bienvenido al backend del Sistema Demo de Desarrollo de APIs con Python"}
+        return {"message": "Bienvenido al backend del Sistema ANIMAL FOOD de Desarrollo de APIs con Python"}
 
     return app
 

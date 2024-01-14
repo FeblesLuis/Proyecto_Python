@@ -11,6 +11,16 @@ from loguru import logger
 from psycopg2 import DatabaseError
 from sqlalchemy import create_engine, engine_from_config, pool
 
+# from alembic import context
+# config = context.config
+# section = config.config_ini_section
+# config.set_section_option(section, "DB_NAME", os.environ.get("POSTGRES_DB"))
+# config.set_section_option(section, "DB_USER", os.environ.get("POSTGRES_USER"))
+# config.set_section_option(section, "DB_PASSWORD", os.environ.get("POSTGRES_PASSWORD"))
+# config.set_section_option(section, "DB_HOST", os.environ.get("POSTGRES_HOST"))
+# config.set_section_option(section, "DB_PORT", os.environ.get("POSTGRES_PORT"))
+
+
 
 # we're appending the app directory to our path here so that we can import config easily
 # sys.path.append(str(pathlib.Path(__file__).resolve().parents[1]))

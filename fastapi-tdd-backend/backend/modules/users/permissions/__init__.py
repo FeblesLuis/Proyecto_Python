@@ -33,6 +33,16 @@ async def get_permissions() -> List:
                 {"users:change-password-by-id": "Actualizar password por el propio usuario"},
             ],
         },
+        {
+            "functionality": "INVENTARIO",
+            "routes": [
+                {"inventory:create-inventory": "Crear inventario"},
+                {"inventory:get_inventory_list": "Listar inventario"},
+                {"inventory:get-inventory-by-id": "Obtener una inventario por su ID"},
+                {"inventory:update-inventory-by-id": "Actualizar una inventario por su ID"},
+                {"inventory:delete-inventory-by-id": "Eliminar una inventario por su ID"}
+            ]
+        }
     ]
 
     return permissions
