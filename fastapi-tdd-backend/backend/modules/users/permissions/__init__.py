@@ -42,7 +42,17 @@ async def get_permissions() -> List:
                 {"inventory:update-inventory-by-id": "Actualizar una inventario por su ID"},
                 {"inventory:delete-inventory-by-id": "Eliminar una inventario por su ID"}
             ]
-        }
+        },
+        {
+            "functionality": "RAW_MATERIAL",
+            "routes": [
+                {"raw_material:create-raw_material": "Crear materia prima"},
+                {"raw_material:get_raw_material_list": "Listar materia prima"},
+                {"raw_material:get-raw_material-by-id": "Obtener una materia prima por su ID"},
+                {"raw_material:update-raw_material-by-id": "Actualizar una materia prima por su ID"},
+                {"raw_material:delete-raw_material-by-id": "Eliminar una materia prima por su ID"}
+            ]
+        },
     ]
 
     return permissions
