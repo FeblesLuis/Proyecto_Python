@@ -50,7 +50,11 @@ async def get_permissions() -> List:
                 {"raw_material:get_raw_material_list": "Listar materia prima"},
                 {"raw_material:get-raw_material-by-id": "Obtener una materia prima por su ID"},
                 {"raw_material:update-raw_material-by-id": "Actualizar una materia prima por su ID"},
+<<<<<<< HEAD
                 {"raw_material:delete-raw_material-by-id": "Eliminar una materia prima por su ID"}
+=======
+                {"raw_material:delete-raw_material-by-id": "Eliminar una materia prima por su ID"},
+>>>>>>> branch-adrian
             ],
         },
         {
@@ -60,9 +64,24 @@ async def get_permissions() -> List:
                 {"product:get_product_list": "Listar producto"},
                 {"product:get-product-by-id": "Obtener producto por su ID"},
                 {"product:update-product-by-id": "Actualizar producto por su ID"},
+<<<<<<< HEAD
                 {"product:delete-product-by-id": "Eliminar producto por su ID"}
+=======
+                {"product:delete-product-by-id": "Eliminar producto por su ID"},
+>>>>>>> branch-adrian
             ],
         },
+        {
+            "functionality": "ORDERS",
+            "routes": [
+                {"orders:create-orders": "Crear pedido"},
+                {"orders:get_orders_list": "Listar pedidos"},
+                {"orders:get-orders-by-id": "Obtener pedido por su ID"},
+                {"orders:update-orders-by-id": "Actualizar pedido por su ID"},
+                {"orders:delete-orders-by-id": "Eliminar pedido por su ID"},
+            ],
+        },
+                
     ]
 
     return permissions

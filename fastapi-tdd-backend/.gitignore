@@ -5,7 +5,7 @@
 __pycache__/
 
 # Environment files
-.env
+# .env
 
 # Compiled Python bytecode
 *.py[cod]
