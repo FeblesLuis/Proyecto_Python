@@ -19,7 +19,7 @@ class Raw_materialBase(BaseSchema):
 class Raw_materialCreate(Raw_materialBase):
     raw_material_name: str 
     provider: str 
-    quantity: int 
+    quantity: int
     
     
 class Raw_materialToSave(Raw_materialCreate):

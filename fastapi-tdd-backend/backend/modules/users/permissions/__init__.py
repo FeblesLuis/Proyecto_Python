@@ -53,6 +53,16 @@ async def get_permissions() -> List:
                 {"raw_material:delete-raw_material-by-id": "Eliminar una materia prima por su ID"}
             ]
         },
+        {
+            "functionality": "PRODUCT",
+            "routes": [
+                {"product:create-product": "Crear producto"},
+                {"product:get_product_list": "Listar producto"},
+                {"product:get-product-by-id": "Obtener producto por su ID"},
+                {"product:update-product-by-id": "Actualizar producto por su ID"},
+                {"product:delete-product-by-id": "Eliminar producto por su ID"}
+            ]
+        },
     ]
 
     return permissions
