@@ -41,7 +41,7 @@ async def get_permissions() -> List:
                 {"inventory:get-inventory-by-id": "Obtener una inventario por su ID"},
                 {"inventory:update-inventory-by-id": "Actualizar una inventario por su ID"},
                 {"inventory:delete-inventory-by-id": "Eliminar una inventario por su ID"}
-            ]
+            ],
         },
         {
             "functionality": "RAW_MATERIAL",
@@ -51,7 +51,7 @@ async def get_permissions() -> List:
                 {"raw_material:get-raw_material-by-id": "Obtener una materia prima por su ID"},
                 {"raw_material:update-raw_material-by-id": "Actualizar una materia prima por su ID"},
                 {"raw_material:delete-raw_material-by-id": "Eliminar una materia prima por su ID"}
-            ]
+            ],
         },
         {
             "functionality": "PRODUCT",
@@ -61,7 +61,7 @@ async def get_permissions() -> List:
                 {"product:get-product-by-id": "Obtener producto por su ID"},
                 {"product:update-product-by-id": "Actualizar producto por su ID"},
                 {"product:delete-product-by-id": "Eliminar producto por su ID"}
-            ]
+            ],
         },
     ]
 
