@@ -63,6 +63,17 @@ async def get_permissions() -> List:
                 {"product:delete-product-by-id": "Eliminar producto por su ID"}
             ]
         },
+        {
+            "functionality": "ORDERS",
+            "routes": [
+                {"orders:create-orders": "Crear pedido"},
+                {"orders:get_orders_list": "Listar pedidos"},
+                {"orders:get-orders-by-id": "Obtener pedido por su ID"},
+                {"orders:update-orders-by-id": "Actualizar pedido por su ID"},
+                {"orders:delete-orders-by-id": "Eliminar pedido por su ID"}
+            ]
+        },
+                
     ]
 
     return permissions

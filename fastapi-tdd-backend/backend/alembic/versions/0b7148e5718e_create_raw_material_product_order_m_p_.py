@@ -51,11 +51,11 @@ def create_product_table():
 
 def create_order_table():
     op.create_table(
-        'order',
+        'orders',
         sa.Column('id', UUID, primary_key=True, default=uuid4()),
-        sa.Column('order_name', sa.String(255), unique=True, index=True, nullable=False),
-        sa.Column('date', sa.DateTime(timezone=True), nullable=True),
+        sa.Column('orders_name', sa.String(255), unique=True, index=True, nullable=False),
         sa.Column('state', sa.String(255), nullable=False),
+        sa.Column('date', sa.DateTime(timezone=True), nullable=True),
         sa.Column('is_active', sa.Boolean, default=True),
         sa.Column('created_by', UUID, nullable=True),
         sa.Column('created_at', sa.DateTime(timezone=True), nullable=True),
@@ -84,7 +84,7 @@ def create_p_p_table():
         'p_p',
         sa.Column('id', UUID, primary_key=True, default=uuid4()),
         sa.Column('required_quantity', sa.Integer, nullable=False),
-        sa.Column('order_id', UUID, sa.ForeignKey("order.id"), nullable=True),
+        sa.Column('order_id', UUID, sa.ForeignKey("orders.id"), nullable=True),
         sa.Column('product_id', UUID, sa.ForeignKey("product.id"), nullable=True),
         sa.Column('is_active', sa.Boolean, default=True),
         sa.Column('created_by', UUID, nullable=True),
