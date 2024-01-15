@@ -108,6 +108,6 @@ def downgrade() -> None:
     op.drop_table('m_p')
     op.drop_table('raw_material')
     op.drop_table('product')
-    op.drop_table('order')
+    op.drop_table('orders')
 
 
